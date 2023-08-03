@@ -48,29 +48,42 @@ Step 5 - Edit it and Paste this into Typing Area (Policy Area) and tap "Save Cha
 }
 
 ```
-Step 6 - Go Down, and lookup for "Access control list (ACL)" & Grant all permissions or Read and Write (whichever can be ticked)<br>
-Step 7 - Now Goto Dashboard of aws, on top, search for "IAM" service.<br>
-Step 8 - In the IAM dashboard, click on "Users" in the left sidebar.<br>
-Step 9 - Click on the "Add user" button to create a new IAM user.<br>
-Step 10 - Provide a username for the new IAM user. <br>
-You can choose any name that helps you identify the user's purpose, such as "s3-uploader." & Press Next & Create User..<br><br>
+Step 6 - Go Down, and lookup for "Access control list (ACL)" & Grant all permissions or Read and Write (whichever can be ticked)
 
-Step 11 - You will be greeted with "Access Key" & "Secret Key"<br>
-Copy it somewhere safe because those keys will be lost once you close the window.<br><br>
+Step 7 - Now Goto Dashboard of aws, on top, search for "IAM" service.
 
-Step 12 - Now you have your S3 Bucket created and you have your access key/secret keys...now it time to run the PHP File Locally/Hosted<br><br>
+Step 8 - In the IAM dashboard, click on "Users" in the left sidebar.
 
-Step 13 - Install XAMPP (https://www.apachefriends.org/download.html)<br>
-Step 14 - Install Composer (https://getcomposer.org/Composer-Setup.exe)<br>
-Step 15 - While installing composer, you may need to select the PHP PATH, it will automatically pop, but if it doesnt, click browse and navigate to your xampp folder, xampp/php/php.exe and select it.<br>
-Step 16 - Open XAMPP, Start Apache, and to the side, there will be "Explorer", Tap it..<br>
-Step 17 - Now open Terminal/CMD/Powershell in the folder that just opened (htdocs)<br>
-Step 18 - In terminal paste this code to install AWS SDK<br>
+Step 9 - Click on the "Add user" button to create a new IAM user.
+
+Step 10 - Provide a username for the new IAM user.
+You can choose any name that helps you identify the user's purpose, such as "s3-uploader." & Press Next & Create User..
+
+Step 11 - You will be greeted with "Access Key" & "Secret Key"
+Copy it somewhere safe because those keys will be lost once you close the window.
+
+Step 12 - Now you have your S3 Bucket created and you have your access key/secret keys...now it time to run the PHP File Locally/Hosted
+
+Step 13 - Install XAMPP (https://www.apachefriends.org/download.html)
+
+Step 14 - Install Composer (https://getcomposer.org/Composer-Setup.exe)
+
+Step 15 - While installing composer, you may need to select the PHP PATH, it will automatically pop, but if it doesnt, click browse and navigate to your xampp folder, xampp/php/php.exe and select it.
+
+Step 16 - Open XAMPP, Start Apache, and to the side, there will be "Explorer", Tap it..
+
+Step 17 - Now open Terminal/CMD/Powershell in the folder that just opened (htdocs)
+
+Step 18 - In terminal paste this code to install AWS SDK
 ```
 composer require aws/aws-sdk-php
 ```
-Step 19 - A new folder "vendor" will be created with AWS folder inside it..<br>
-Step 20 - Place the "S3-Bucket-Uploader.php" which you downloaded from GitHub into the "htdocs" folder.<br>
-Step 21 - Make sure to replace YOUR_ACCESS_KEY, YOUR_SECRET_KEY, and YOUR_BUCKET_NAME with your actual AWS credentials and bucket name (You have to change total 4 keys and 2 bucket names)<br>
-Step 22 - Goto your browser, and search 'localhost' in address bar.<br>
-Step 23 - The Project should be up and running.<br>
+Step 19 - A new folder "vendor" will be created with AWS folder inside it..
+
+Step 20 - Place the "S3-Bucket-Uploader.php" which you downloaded from GitHub into the "htdocs" folder.
+
+Step 21 - Make sure to replace YOUR_ACCESS_KEY, YOUR_SECRET_KEY, and YOUR_BUCKET_NAME with your actual AWS credentials and bucket name (You have to change total 4 keys and 2 bucket names)
+
+Step 22 - Goto your browser, and search 'localhost' in address bar.
+
+Step 23 - The Project should be up and running.
