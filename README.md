@@ -63,6 +63,6 @@ composer require aws/aws-sdk-php
 ```
 Step 19 - A new folder "vendor" will be created with AWS folder inside it..<br>
 Step 20 - Place the "S3-Bucket-Uploader.php" which you downloaded from GitHub into the "htdocs" folder.<br>
-Step 21 - Make sure to replace YOUR_ACCESS_KEY, YOUR_SECRET_KEY, and YOUR_BUCKET_NAME with your actual AWS credentials and bucket name.<br>
+Step 21 - Make sure to replace YOUR_ACCESS_KEY, YOUR_SECRET_KEY, and YOUR_BUCKET_NAME with your actual AWS credentials and bucket name (You have to change total 4 keys and 2 bucket names)<br>
 Step 22 - Goto your browser, and search 'localhost' in address bar.<br>
 Step 23 - The Project should be up and running.<br>
