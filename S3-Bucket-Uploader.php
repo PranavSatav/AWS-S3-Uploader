@@ -7,8 +7,8 @@ use Aws\S3\S3Client;
 // Check if the form was submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
     // AWS credentials
-    $accessKey = 'AKIAVLRMJUUJFT5NFFQM';
-    $secretKey = 'oVCnBYce1OtNnM7543+/X2d4p/kFyyExQg9XB4UD';
+    $accessKey = 'Your Access Key';
+    $secretKey = 'Your Secret Key';
 
     // Create an S3Client
     $s3 = new S3Client([
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
         $fileName = $_FILES['file']['name'];
 
         // Upload the file to your S3 bucket
-        $bucketName = 'damnbruh';
+        $bucketName = 'YOUR BUCKET NAME';
         $s3->putObject([
             'Bucket' => $bucketName,
             'Key' => $fileName,
@@ -43,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
 
 // List uploaded files
 // AWS credentials
-$accessKey = 'AKIAVLRMJUUJFT5NFFQM';
-$secretKey = 'oVCnBYce1OtNnM7543+/X2d4p/kFyyExQg9XB4UD';
+$accessKey = 'Your Access Key';
+$secretKey = 'Your Secret Key';
 
 // Create an S3Client
 $s3 = new S3Client([
@@ -57,7 +57,7 @@ $s3 = new S3Client([
 ]);
 
 // Get list of files from your S3 bucket
-$bucketName = 'damnbruh';
+$bucketName = 'YOUR BUCKET NAME';
 $objects = $s3->listObjects(['Bucket' => $bucketName]);
 $uploadedFiles = [];
 foreach ($objects['Contents'] as $object) {
