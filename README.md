@@ -3,7 +3,6 @@
 
 A simple file uploader to amazon's S3 Bucket using PHP
 
-
 ## Steps to Run
 
 tep 1 - Set up an AWS account: If you don't have an Amazon Web Services (AWS) account, create one at https://aws.amazon.com/
