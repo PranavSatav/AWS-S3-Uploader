@@ -48,6 +48,8 @@ Step 5 - Edit it and Paste this into Typing Area (Policy Area) and tap "Save Cha
 }
 
 ```
+(Note - In above code, you might need to change the 'damnbruh' to ur bucketname)
+
 Step 6 - Go Down, and lookup for "Access control list (ACL)" & Grant all permissions or Read and Write (whichever can be ticked)
 
 Step 7 - Now Goto Dashboard of aws, on top, search for "IAM" service.
